@@ -1,4 +1,6 @@
+import GalleryComponent from "../../../../components/gallery/GalleryComponent";
 import { codeExamplesData } from "../../../../data/codeExamplesData";
+import { images1, images2 } from "../../../../data/imageData";
 import {
     PetProject,
   PortfolioContainer,
@@ -29,11 +31,13 @@ export const MainPortfolio = () => {
             <BurgerComponent title="Модель корзины для БД" code={codeExamplesData.cart} />
             <BurgerComponent title="Route handler для API-сервера, написанного на Node.js с использованием фреймворка Express" code={codeExamplesData.login} />
           </Project>
+          <GalleryComponent images={images2}/>
           <Project>
             <ProjectTitle>Пет проекты:</ProjectTitle>
             <ProjectDescription>
               Разработка различных проектов для обкатывания VanillaJS и ReactJS
             </ProjectDescription>
+            
             <PetProject>
               <h3>Этот сайт</h3>
               <h4>
@@ -106,6 +110,7 @@ export const MainPortfolio = () => {
                 Версия React
               </ProjectLink>
             </PetProject>
+            <GalleryComponent images={images1}/>
           </Project>
         </PortfolioContainer>
       );
