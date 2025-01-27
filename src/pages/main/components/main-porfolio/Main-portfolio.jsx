@@ -1,3 +1,4 @@
+import { codeExamplesData } from "../../../../data/codeExamplesData";
 import {
     PetProject,
   PortfolioContainer,
@@ -6,6 +7,7 @@ import {
   ProjectLink,
   ProjectTitle,
 } from "../../../../styles/MainPortfolio";
+import { BurgerComponent } from "./component/BurgerComponent";
 
 export const MainPortfolio = () => {
     return (
@@ -17,14 +19,35 @@ export const MainPortfolio = () => {
             </ProjectTitle>
             <ProjectDescription>
               Так как проект в разработке, его код является собственностью компании.
-              Ниже я привела примеры кода
+              Ниже я привела примеры кода, написанного мной в рамках проекта
             </ProjectDescription>
+            <BurgerComponent title="Store" code={codeExamplesData.store} />
+            <BurgerComponent title="Логика авторизации" code={codeExamplesData.auth} />
+            <BurgerComponent title="Утилита для выполнения запросов" code={codeExamplesData.request} />
+            <BurgerComponent title="Один из переиспользуемых компонентов" code={codeExamplesData.icon} />
+            <BurgerComponent title="Action creator с асинхронной логикой" code={codeExamplesData.addProduct} />
+            <BurgerComponent title="Модель корзины для БД" code={codeExamplesData.cart} />
+            <BurgerComponent title="Route handler для API-сервера, написанного на Node.js с использованием фреймворка Express" code={codeExamplesData.login} />
           </Project>
           <Project>
             <ProjectTitle>Пет проекты:</ProjectTitle>
             <ProjectDescription>
               Разработка различных проектов для обкатывания VanillaJS и ReactJS
             </ProjectDescription>
+            <PetProject>
+              <h3>Этот сайт</h3>
+              <h4>
+                Использовала React и его хуки
+              </h4>
+              <ProjectLink
+                href="https://github.com/vas-alina/blog-full.git"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ссылка на GitHub
+              </ProjectLink>
+            </PetProject>
+            <hr></hr>
             <PetProject>
               <h3>Блог</h3>
               <h4>
@@ -39,6 +62,7 @@ export const MainPortfolio = () => {
                 Ссылка на GitHub
               </ProjectLink>
             </PetProject>
+            <hr></hr>
             <PetProject>
               <h3>TODO LIST</h3>
               <h4>Простое приложение для управления задачами. React, Redux.</h4>
@@ -50,6 +74,7 @@ export const MainPortfolio = () => {
                 Ссылка на GitHub
               </ProjectLink>
             </PetProject>
+            <hr></hr>
             <PetProject>
               <h3>Лендинг для мед.клиники</h3>
               <h4>Современный лендинг. Использовано: React, Redux, Node.js, Postgres.</h4>
@@ -61,6 +86,7 @@ export const MainPortfolio = () => {
                 Ссылка на GitHub
               </ProjectLink>
             </PetProject>
+            <hr></hr>
             <PetProject>
               <h3>Игра крестики-нолики</h3>
               <h4>Классическая игра, реализованная на React и React + Redux.</h4>
@@ -83,45 +109,4 @@ export const MainPortfolio = () => {
           </Project>
         </PortfolioContainer>
       );
-//   return (
-//     <PortfolioContainer>
-//       <h2>Портфолио</h2>
-//       <Project>
-//         <ProjectTitle>
-//           Коммерческий опыт: Интернет магазин для компании Еврострой
-//         </ProjectTitle>
-//         <ProjectDescription>
-//           Так как проект в разработке, его код является собственностью компании.
-//           Ниже я привела примеры кода
-//         </ProjectDescription>
-//       </Project>
-//       <Project>
-//         <ProjectTitle>Пет проекты:</ProjectTitle>
-//         <ProjectDescription>
-//           Разработка различных проектов для обкатывания VanillaJS и ReactJS
-//         </ProjectDescription>
-//         <div>
-//             <h3>Блог</h3>
-//             <h4>Полноценное fullstack приложения для ведения своего блога. Использованно: react redux nodejs docker sequalize postgres</h4>
-//             <a href="https://github.com/vas-alina/blog-full.git">Ссылка на github</a>
-//         </div>
-//         <div>
-//             <h3>TODO LIST</h3>
-//             <h4>React redux</h4>
-//             <a href="https://github.com/vas-alina/TodoList-react-redux.git">ссылка</a>
-//         </div>
-//         <div>
-//             <h3>Лендинг для мед.клиники</h3>
-//             <h4>Технологии React Redux Nodejs Postgres</h4>
-//             <a href="https://github.com/vas-alina/med_clinic.git">ссылка</a>
-//         </div>
-//         <div>
-//             <h3>Игра крестики-нолики</h3>
-//             <h4>Реализация на React и на React + Redux</h4>
-//             <a href="https://github.com/vas-alina/game-app-react-redux.git">ссылка</a>
-//             <a href="https://github.com/vas-alina/game-app.git">ссылка</a>
-//         </div>
-//       </Project>
-//     </PortfolioContainer>
-//   );
 };
