@@ -5,26 +5,27 @@ import { IoIosMail } from "react-icons/io";
 export const PersonContact = () => {
   return (
     <ContactWrapper>
+      <ContactLink>Способы связи:</ContactLink>
       <ContactLink
         href="mailto:vasalina93@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <IoIosMail />
+        <IoIosMail /> vasalina93@gmail.com
       </ContactLink>
       <ContactLink
         href="https://github.com/vas-alina"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaGithub />
+        <FaGithub /> vas-alina
       </ContactLink>
       <ContactLink
         href="https://t.me/alinavasalina"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaTelegramPlane />
+        <FaTelegramPlane /> @alinavasalina
       </ContactLink>
     </ContactWrapper>
   );

@@ -6,7 +6,6 @@ export const Person = () => {
     <>
       <PersonWrapper>
         <PersonImg />
-        <h2>Васько Алина</h2>
         <PersonContact />
       </PersonWrapper>
     </>
