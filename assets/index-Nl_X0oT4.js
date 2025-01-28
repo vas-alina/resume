@@ -350,7 +350,7 @@ module.exports = Cart;`,login:`app.post('/login', async (req, res) => {
     } catch (error) {
         res.status(401).send({ error: error.message || "Unknown error" });
     }
-});`},sm=[{id:1,src:"/petProject/game.png",alt:"Крестики-нолики"},{id:2,src:"/petProject/todo.png",alt:"ToDo"}],am=[{id:1,src:"/evrostroyImg/evrostroyAdm.png",alt:"Админка"},{id:2,src:"/evrostroyImg/evrostroyAdmCatalog.png",alt:"Каталог Админки"},{id:3,src:"/evrostroyImg/evrostroyCatalog.png",alt:"Каталог товаров"},{id:4,src:"/evrostroyImg/evrostroyFavorite.png",alt:"Избранное"},{id:5,src:"evrostroyImg/evrostroyHome.png",alt:"Домашняя страница"}],cm=ae.div`
+});`},sm=[{id:1,src:"petProject/game.png",alt:"Крестики-нолики"},{id:2,src:"petProject/todo.png",alt:"ToDo"}],am=[{id:1,src:"evrostroyImg/evrostroyAdm.png",alt:"Админка"},{id:2,src:"evrostroyImg/evrostroyAdmCatalog.png",alt:"Каталог Админки"},{id:3,src:"evrostroyImg/evrostroyCatalog.png",alt:"Каталог товаров"},{id:4,src:"evrostroyImg/evrostroyFavorite.png",alt:"Избранное"},{id:5,src:"evrostroyImg/evrostroyHome.png",alt:"Домашняя страница"}],cm=ae.div`
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
