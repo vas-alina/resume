@@ -479,7 +479,7 @@ module.exports = Cart;`,login:`app.post('/login', async (req, res) => {
   border-radius: 50%; 
   object-fit: cover;
   border: 3px solid #ccc; 
-`,Am="/assets/avatar-DFPcnz--.jpg",Um=()=>S.jsx(S.Fragment,{children:S.jsx(Mm,{children:S.jsx(Fm,{src:Am,alt:"Your Name"})})}),$m=ae.div`
+`,Am="/resume/assets/avatar-DFPcnz--.jpg",Um=()=>S.jsx(S.Fragment,{children:S.jsx(Mm,{children:S.jsx(Fm,{src:Am,alt:"Your Name"})})}),$m=ae.div`
     display: flex;
     flex-direction: column;
     width: 20%;  
