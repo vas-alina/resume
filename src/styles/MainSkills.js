@@ -9,7 +9,9 @@ export const SkillsContainer = styled.div`
 export const SkillsGrid = styled.div`
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 5px;
+
+
 `;
 
 export const SkillBox = styled.div`
