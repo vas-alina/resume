@@ -10,6 +10,11 @@ export const AppWrapper = styled.div`
     height: 100%;
     margin: 0 auto;
 
+    @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+  }
 `
 export const ButtonScroll = styled.button`
   position: fixed;
